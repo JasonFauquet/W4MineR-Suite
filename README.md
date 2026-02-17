@@ -131,6 +131,7 @@ https://github.com/JasonFauquet/W4MineR-Suite
 source("install_deps.R")
 install_deps()
 ```
+
 ---
 
 ## Run the apps
