@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+title: "W4MineR Suite"
+type: software
+authors:
+  - family-names: "Fauquet"
+    given-names: "Jason"
+version: "1.0.0"
+date-released: "2026-02-17"
+doi: "10.5281/zenodo.18669140"
+url: "https://github.com/JasonFauquet/W4MineR-Suite"
+license: "MIT"
+keywords:
+  - metabolomics
+  - untargeted
+  - LC-MS
+  - MS/MS
+  - MZmine
+  - Workflow4Metabolomics
+  - W4M
+  - Galaxy
+  - Shiny
+  - GNPS
+  - MetGem
+  - SIRIUS
