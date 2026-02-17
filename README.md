@@ -73,3 +73,144 @@ R/Shiny suite to convert MZmine outputs ↔ W4M tables, run univariate/multivari
     - filtered MGF (from W4M → MZmine conversion)
     Outputs:
     - final CSV + final MGF (synchronized) for GNPS / MetGem / SIRIUS / other annotation tools
+
+---
+
+## Apps included
+
+1) **W4MineR_MZmine_to_W4M_bidirectional**  
+Folder: `apps/W4MineR_MZmine_to_W4M_bidirectional/`  
+Used twice in the workflow:
+- MZmine → W4M: build W4M triplet tables from MZmine exports  
+- W4M → MZmine: convert post-W4M triplet to a MZmine-like CSV and filter the original MGF  
+
+2) **W4MineR_Untargeted_Metabolomics_Pipeline_Univariate**  
+Folder: `apps/W4MineR_Untargeted_Metabolomics_Pipeline_Univariate/`  
+- Univariate statistics from the post-W4M triplet  
+- Exports tables + plots to an output folder  
+
+3) **W4MineR_Untargeted_Metabolomics_Pipeline_Multivariate**  
+Folder: `apps/W4MineR_Untargeted_Metabolomics_Pipeline_Multivariate/`  
+- Multivariate statistics/diagnostics from the post-W4M triplet  
+- Produces an imputed matrix CSV used in the final pre-annotation filtering step  
+
+4) **W4MineR_CSV_and_MGF_filter_just_before_annotation**  
+Folder: `apps/W4MineR_CSV_and_MGF_filter_just_before_annotation/`  
+Final synchronization step just before annotation:
+- input (A) imputed matrix CSV (multivariate)  
+- input (B) non-annotated CSV matrix (W4M → MZmine conversion)  
+- input (C) filtered MGF (W4M → MZmine conversion)  
+- output: final filtered CSV + final filtered MGF (feature IDs aligned)  
+
+---
+
+## Requirements
+
+- R (recommended >= 4.2)  
+- Packages are installed automatically using `install_deps.R`  
+
+Tip (Windows): install **Rtools** if you need compilation for some packages.
+
+---
+
+## Installation
+
+1) Download or clone the repository:
+
+https://github.com/<YOUR_GITHUB>/W4MineR-Suite
+
+2) Install dependencies (from R):
+
+- Open R (or RStudio)
+- Set your working directory to the repository folder
+- Run:
+
+`source("install_deps.R")`  
+`install_deps()`
+
+---
+
+## Run the apps
+
+- Open R (or RStudio)
+- Set your working directory to the repository folder
+- Run:
+
+`source("scripts/run_app.R")`
+
+Then run any app with:
+
+`run_app("apps/W4MineR_MZmine_to_W4M_bidirectional")`
+
+Other apps:
+
+`run_app("apps/W4MineR_Untargeted_Metabolomics_Pipeline_Univariate")`  
+`run_app("apps/W4MineR_Untargeted_Metabolomics_Pipeline_Multivariate")`  
+`run_app("apps/W4MineR_CSV_and_MGF_filter_just_before_annotation")`
+
+---
+
+## Inputs / Outputs (high level)
+
+- MZmine → W4M  
+Input: MZmine quant table + sample metadata  
+Output: W4M triplet tables (`dataMatrix.tsv`, `sampleMetadata.tsv`, `variableMetadata.tsv`)
+
+- W4M processing  
+Input: W4M triplet  
+Output: updated W4M triplet (post-W4M)
+
+- W4M → MZmine (+MGF filtering)  
+Input: post-W4M triplet + original MGF  
+Output: filtered MGF + non-annotated CSV matrix
+
+- Univariate stats  
+Input: post-W4M triplet  
+Output: univariate outputs (tables/plots)
+
+- Multivariate stats  
+Input: post-W4M triplet  
+Output: multivariate outputs + imputed matrix CSV
+
+- Pre-annotation filter  
+Input: imputed matrix CSV + non-annotated CSV + filtered MGF  
+Output: final synchronized CSV + final MGF
+
+---
+
+## How to cite
+
+After creating a GitHub **Release** and archiving it on **Zenodo**, cite the exact version you used:
+
+Fauquet, J. (YEAR). W4MineR Suite (vX.Y.Z) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+
+See also:
+- `CITATION.cff`
+- `CITATION.bib`
+
+---
+
+## Releasing + DOI (Zenodo)
+
+See `RELEASING.md`.
+
+Summary:
+1) enable the repo in Zenodo (GitHub integration)  
+2) create a GitHub Release (`v1.0.0`, `v1.0.1`, …)  
+3) Zenodo archives the release and mints a DOI  
+
+---
+
+## License
+
+MIT License (see `LICENSE`).
+
+---
+
+## Support / Issues
+
+Please open a GitHub Issue with:
+- which app(s) you used and in which direction (MZmine→W4M or W4M→MZmine)
+- your input file types (MZmine export format, W4M tables, MGF)
+- `sessionInfo()`
+- and a minimal reproducible example if possible
