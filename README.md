@@ -140,17 +140,23 @@ install_deps()
 - Set your working directory to the repository folder
 - Run:
 
-`source("scripts/run_app.R")`
+```r
+source("scripts/run_app.R")
+```
 
 Then run any app with:
 
-`run_app("apps/W4MineR_MZmine_to_W4M_bidirectional")`
+```r
+run_app("apps/W4MineR_MZmine_to_W4M_bidirectional")
+```
 
 Other apps:
 
-`run_app("apps/W4MineR_Untargeted_Metabolomics_Pipeline_Univariate")`  
-`run_app("apps/W4MineR_Untargeted_Metabolomics_Pipeline_Multivariate")`  
-`run_app("apps/W4MineR_CSV_and_MGF_filter_just_before_annotation")`
+```r
+run_app("apps/W4MineR_Untargeted_Metabolomics_Pipeline_Univariate")
+run_app("apps/W4MineR_Untargeted_Metabolomics_Pipeline_Multivariate")
+run_app("apps/W4MineR_CSV_and_MGF_filter_just_before_annotation")
+```
 
 ---
 
