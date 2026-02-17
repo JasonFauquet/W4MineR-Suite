@@ -182,9 +182,7 @@ Output: final synchronized CSV + final MGF
 
 ## How to cite
 
-After creating a GitHub **Release** and archiving it on **Zenodo**, cite the exact version you used:
-
-Fauquet, J. (YEAR). W4MineR Suite (vX.Y.Z) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+Fauquet, J. (2026). *JasonFauquet/W4MineR-Suite: v1.0.0* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18669140
 
 See also:
 - `CITATION.cff`
@@ -197,9 +195,9 @@ See also:
 See `RELEASING.md`.
 
 Summary:
-1) enable the repo in Zenodo (GitHub integration)  
-2) create a GitHub Release (`v1.0.0`, `v1.0.1`, …)  
-3) Zenodo archives the release and mints a DOI  
+- enable the repo in Zenodo (GitHub integration)
+- create a GitHub Release (`v1.0.0`, `v1.0.1`, …)
+- Zenodo archives the release and mints a DOI
 
 ---
 
