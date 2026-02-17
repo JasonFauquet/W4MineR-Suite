@@ -119,7 +119,7 @@ Tip (Windows): install **Rtools** if you need compilation for some packages.
 
 1) Download or clone the repository:
 
-https://github.com/<YOUR_GITHUB>/W4MineR-Suite
+https://github.com/JasonFauquet/W4MineR-Suite
 
 2) Install dependencies (from R):
 
@@ -127,8 +127,9 @@ https://github.com/<YOUR_GITHUB>/W4MineR-Suite
 - Set your working directory to the repository folder
 - Run:
 
-`source("install_deps.R")`  
-`install_deps()`
+```r
+source("install_deps.R")
+install_deps()
 
 ---
 
