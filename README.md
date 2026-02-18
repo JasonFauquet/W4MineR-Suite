@@ -42,11 +42,11 @@ R/Shiny suite to convert MZmine outputs ↔ W4M tables, run univariate/multivari
 
     1) Check format
     2) Intensity check to compute mean fold-change (samples vs blanks)
-    3) Filter features based on the chosen mean fold-change threshold
+    3) Filter features based on a chosen mean fold-change threshold
     4) Quality metrics (pre-correction)
     5) Batch correction (e.g., QC-based drift correction)
     6) Quality metrics (post-correction)
-    7) Filter features with RSD(QC) > 30%
+    7) Filter features (e.g. RSD(QC) > 30%)
 
     Output: updated W4M triplet (post-W4M)
       - dataMatrix.tsv
