@@ -1,6 +1,6 @@
 # W4MineR Suite
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18669140.svg)](https://doi.org/10.5281/zenodo.18669140)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18681624.svg)](https://doi.org/10.5281/zenodo.18681624)
 
 R/Shiny suite to convert MZmine outputs ↔ W4M tables, run univariate/multivariate stats, and export to GNPS/MetGem for molecular networking.
 
@@ -190,7 +190,7 @@ Output: final synchronized CSV + final MGF
 
 ## How to cite
 
-Fauquet, J. (2026). W4MineR-Suite (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18669140
+Fauquet, J. (2026). W4MineR-Suite (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18681624
 
 See also:
 - `CITATION.cff`
