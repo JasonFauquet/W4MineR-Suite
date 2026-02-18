@@ -119,7 +119,7 @@ Tip (Windows): install **Rtools** if you need compilation for some packages.
 
 1) Download or clone the repository:
 
-https://github.com/JasonFauquet/W4MineR-Suite
+https://github.com/CTP-Lab/W4MineR-Suite
 
 2) Install dependencies (from R):
 
