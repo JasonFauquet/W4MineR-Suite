@@ -1,6 +1,6 @@
 # JaFaR-Suite
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18681624.svg)](https://doi.org/10.5281/zenodo.18681624)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18695152.svg)](https://doi.org/10.5281/zenodo.18695152)
 
 R/Shiny suite to convert MZmine outputs ↔ W4M tables, run univariate/multivariate stats, and export to GNPS/MetGem for molecular networking.
 
@@ -190,7 +190,7 @@ Output: final synchronized CSV + final MGF
 
 ## How to cite
 
-Fauquet, J. (2026). JaFaR-Suite (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18681624
+Fauquet, J. (2026). JaFaR-Suite (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18695152
 
 See also:
 - `CITATION.cff`
